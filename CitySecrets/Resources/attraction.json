@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Eiffel Tower",
+        "country": "France",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 48.8584,
+            "longitude": 2.2945
+        },
+        "description": "The Eiffel Tower is an iconic wrought-iron lattice tower in Paris, standing tall at 324 meters. It was designed by Gustave Eiffel and built for the 1889 World's Fair, marking the 100th anniversary of the French Revolution. The tower offers stunning panoramic views of Paris from its observation decks and is one of the most visited paid monuments in the world.",
+        "category": "historical building",
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "hours": "09:30 AM - 11:45 PM"
+    },
+    {
+        "name": "Louvre Museum",
+        "country": "France",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 48.8606,
+            "longitude": 2.3376
+        },
+        "description": "The Louvre Museum is the world's largest art museum and a historic monument in Paris. Home to thousands of works of art, including the Mona Lisa and the Venus de Milo, the Louvre is a former royal palace that spans centuries of history and culture. The museum's collections range from ancient civilizations to the 19th century, making it a must-visit destination for art lovers.",
+        "category": "museum",
+        "image": "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "hours": "09:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Colosseum",
+        "country": "Italy",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 41.8902,
+            "longitude": 12.4922
+        },
+        "description": "The Colosseum in Rome is an ancient amphitheater that dates back to 70-80 AD. Known for its grand architecture and historical significance, it was the largest amphitheater ever built and could hold up to 80,000 spectators. The Colosseum hosted gladiatorial contests, public spectacles, and dramas based on Classical mythology. It remains one of the most enduring symbols of the Roman Empire.",
+        "category": "historical building",
+        "image": "https://example.com/colosseum.jpg",
+        "hours": "08:30 AM - 07:00 PM"
+    },
+    {
+        "name": "Sagrada Familia",
+        "country": "Spain",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 41.4036,
+            "longitude": 2.1744
+        },
+        "description": "The Sagrada Familia is an awe-inspiring basilica in Barcelona, designed by renowned architect Antoni Gaudí. Construction began in 1882 and continues to this day, with the basilica's unique blend of Gothic and Art Nouveau styles making it a UNESCO World Heritage Site. Its intricate facades and towering spires create a surreal landscape that attracts millions of visitors each year.",
+        "category": "historical building",
+        "image": "https://example.com/sagrada_familia.jpg",
+        "hours": "09:00 AM - 08:00 PM"
+    },
+    {
+        "name": "British Museum",
+        "country": "United Kingdom",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 51.5194,
+            "longitude": -0.1270
+        },
+        "description": "The British Museum in London is a public institution dedicated to human history, art, and culture. Established in 1753, it houses a vast collection of artifacts from all over the world, including the Rosetta Stone, the Elgin Marbles, and the Egyptian mummies. The museum's galleries provide a journey through time, offering insights into the achievements of ancient civilizations.",
+        "category": "museum",
+        "image": "https://example.com/british_museum.jpg",
+        "hours": "10:00 AM - 05:30 PM"
+    },
+    {
+        "name": "Acropolis of Athens",
+        "country": "Greece",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 37.9715,
+            "longitude": 23.7267
+        },
+        "description": "The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city, containing the remains of several historically significant buildings, including the Parthenon. Constructed in the 5th century BC, it stands as a symbol of the classical spirit and civilization of ancient Greece. The Acropolis offers a glimpse into the architectural and artistic achievements of the Athenian golden age.",
+        "category": "historical building",
+        "image": "https://example.com/acropolis.jpg",
+        "hours": "08:00 AM - 08:00 PM"
+    },
+    {
+        "name": "Prado Museum",
+        "country": "Spain",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 40.4138,
+            "longitude": -3.6921
+        },
+        "description": "The Prado Museum in Madrid is one of the most renowned art museums in the world, known for its rich collection of European art from the 12th to the early 20th century. It features masterpieces by artists such as Velázquez, Goya, and El Greco. The museum's vast collection offers a deep dive into Spanish art history and includes some of the most famous works of the Spanish Golden Age.",
+        "category": "museum",
+        "image": "https://example.com/prado_museum.jpg",
+        "hours": "10:00 AM - 08:00 PM"
+    },
+    {
+        "name": "Notre-Dame Cathedral",
+        "country": "France",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 48.8530,
+            "longitude": 2.3499
+        },
+        "description": "Notre-Dame Cathedral in Paris is a medieval Catholic cathedral known for its French Gothic architecture, flying buttresses, and stunning stained-glass windows. Completed in the 14th century, it has been the site of many significant historical events. Despite suffering significant damage in the 2019 fire, the cathedral remains a symbol of Parisian heritage and resilience.",
+        "category": "historical building",
+        "image": "https://example.com/notre_dame.jpg",
+        "hours": "08:00 AM - 06:45 PM"
+    },
+    {
+        "name": "Van Gogh Museum",
+        "country": "Netherlands",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 52.3584,
+            "longitude": 4.8811
+        },
+        "description": "The Van Gogh Museum in Amsterdam houses the largest collection of Vincent van Gogh's paintings and drawings in the world. The museum's exhibits offer insight into the artist's life, his inspirations, and his influence on modern art. Highlights include the famous 'Sunflowers', 'The Bedroom', and 'Wheatfield with Crows', making it a must-visit for art enthusiasts.",
+        "category": "gallery",
+        "image": "https://example.com/van_gogh_museum.jpg",
+        "hours": "09:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Rijksmuseum",
+        "country": "Netherlands",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 52.3600,
+            "longitude": 4.8852
+        },
+        "description": "The Rijksmuseum in Amsterdam is the national museum of the Netherlands, dedicated to Dutch arts and history. Its collection includes masterpieces from the Dutch Golden Age, such as Rembrandt's 'The Night Watch' and Vermeer's 'The Milkmaid'. The museum's stunning architecture and vast collections offer a comprehensive look at the Netherlands' cultural heritage.",
+        "category": "museum",
+        "image": "https://example.com/rijksmuseum.jpg",
+        "hours": "09:00 AM - 05:00 PM"
+    }
+]
