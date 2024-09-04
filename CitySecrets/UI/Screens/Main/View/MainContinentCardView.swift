@@ -17,16 +17,6 @@ struct MainContinentCardView: View {
                     .font(.title3.weight(.semibold))
                     .foregroundColor(.white), alignment: .topLeading
             )
-            .overlay(
-                Text("Review")
-                    .font(.subheadline)
-                    .foregroundColor(.theme.text.textGreen)
-                    .padding(.vertical, 4)
-                    .padding(.horizontal, 10)
-                    .background(Color.white)
-                    .clipShape(Capsule())
-                    .padding(), alignment: .bottomTrailing
-            )
     }
 }
 

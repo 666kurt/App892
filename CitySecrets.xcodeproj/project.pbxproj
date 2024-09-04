@@ -18,7 +18,7 @@
 		FC5D0F642C85A8C100823694 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F632C85A8C100823694 /* ContentView.swift */; };
 		FC5D0F662C85A8C300823694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5D0F652C85A8C300823694 /* Assets.xcassets */; };
 		FC5D0F692C85A8C300823694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5D0F682C85A8C300823694 /* Preview Assets.xcassets */; };
-		FC5D0F782C85AB5500823694 /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F772C85AB5500823694 /* Color+extensions.swift */; };
+		FC5D0F782C85AB5500823694 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F772C85AB5500823694 /* Extensions.swift */; };
 		FC5D0F7B2C85AC8000823694 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F7A2C85AC8000823694 /* Router.swift */; };
 		FC5D0F7E2C85AE4500823694 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F7D2C85AE4500823694 /* TabBarItem.swift */; };
 		FC5D0F812C85B00C00823694 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F802C85B00C00823694 /* TabBarView.swift */; };
@@ -28,6 +28,15 @@
 		FC5D0F8C2C85B3E600823694 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F8B2C85B3E600823694 /* ProfileScreen.swift */; };
 		FC5D0F8E2C85CC3900823694 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F8D2C85CC3900823694 /* Attraction.swift */; };
 		FC5D0F912C85CD5D00823694 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F902C85CD5D00823694 /* MainViewModel.swift */; };
+		FCF396A22C88647300654705 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A12C88647300654705 /* SearchBar.swift */; };
+		FCF396A42C8864F100654705 /* AttractionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A32C8864F100654705 /* AttractionDetailView.swift */; };
+		FCF396A62C88678D00654705 /* CornerRadius+modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */; };
+		FCF396A82C8868C000654705 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A72C8868C000654705 /* CircleButton.swift */; };
+		FCF396AA2C886FAA00654705 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A92C886FAA00654705 /* MapView.swift */; };
+		FCF396AC2C88802400654705 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AB2C88802400654705 /* MapScreen.swift */; };
+		FCF396AE2C8894CB00654705 /* SeparateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AD2C8894CB00654705 /* SeparateTime.swift */; };
+		FCF396B12C88974B00654705 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B02C88974B00654705 /* SegmentedControl.swift */; };
+		FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +52,7 @@
 		FC5D0F632C85A8C100823694 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC5D0F652C85A8C300823694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5D0F682C85A8C300823694 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FC5D0F772C85AB5500823694 /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
+		FC5D0F772C85AB5500823694 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FC5D0F7A2C85AC8000823694 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FC5D0F7D2C85AE4500823694 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		FC5D0F802C85B00C00823694 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -53,6 +62,15 @@
 		FC5D0F8B2C85B3E600823694 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		FC5D0F8D2C85CC3900823694 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FC5D0F902C85CD5D00823694 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FCF396A12C88647300654705 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FCF396A32C8864F100654705 /* AttractionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailView.swift; sourceTree = "<group>"; };
+		FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CornerRadius+modifiers.swift"; sourceTree = "<group>"; };
+		FCF396A72C8868C000654705 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		FCF396A92C886FAA00654705 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FCF396AB2C88802400654705 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		FCF396AD2C8894CB00654705 /* SeparateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateTime.swift; sourceTree = "<group>"; };
+		FCF396B02C88974B00654705 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionPopularCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				FC51965B2C873F700046552E /* AttractionCardView.swift */,
+				FCF396A32C8864F100654705 /* AttractionDetailView.swift */,
+				FCF396AB2C88802400654705 /* MapScreen.swift */,
+				FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +192,10 @@
 			children = (
 				FC5D0F7C2C85AE2600823694 /* TabBar */,
 				FC51965F2C8741B90046552E /* URLImageView.swift */,
+				FCF396A12C88647300654705 /* SearchBar.swift */,
+				FCF396A72C8868C000654705 /* CircleButton.swift */,
+				FCF396A92C886FAA00654705 /* MapView.swift */,
+				FCF396B02C88974B00654705 /* SegmentedControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -181,23 +206,15 @@
 				FC5D0F792C85AC7800823694 /* Helpers */,
 				FC5D0F762C85A94900823694 /* Serivces */,
 				FC5D0F752C85A93800823694 /* Modifiers */,
-				FC5D0F742C85A93000823694 /* Extensions */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		FC5D0F742C85A93000823694 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FC5D0F772C85AB5500823694 /* Color+extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FC5D0F752C85A93800823694 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
 				FC5D0F822C85B27C00823694 /* VStack+modifiers.swift */,
+				FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -213,7 +230,9 @@
 		FC5D0F792C85AC7800823694 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FC5D0F772C85AB5500823694 /* Extensions.swift */,
 				FC5D0F7A2C85AC8000823694 /* Router.swift */,
+				FCF396AD2C8894CB00654705 /* SeparateTime.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -333,24 +352,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF396AC2C88802400654705 /* MapScreen.swift in Sources */,
 				FC5196542C871EA60046552E /* Continent.swift in Sources */,
 				FC51965C2C873F700046552E /* AttractionCardView.swift in Sources */,
 				FC5196602C8741B90046552E /* URLImageView.swift in Sources */,
 				FC5D0F862C85B37800823694 /* MainScreen.swift in Sources */,
+				FCF396A42C8864F100654705 /* AttractionDetailView.swift in Sources */,
 				FC5D0F912C85CD5D00823694 /* MainViewModel.swift in Sources */,
 				FC5D0F892C85B3BC00823694 /* FavoritesScreen.swift in Sources */,
 				FC5D0F7B2C85AC8000823694 /* Router.swift in Sources */,
-				FC5D0F782C85AB5500823694 /* Color+extensions.swift in Sources */,
+				FC5D0F782C85AB5500823694 /* Extensions.swift in Sources */,
+				FCF396AA2C886FAA00654705 /* MapView.swift in Sources */,
 				FC5D0F7E2C85AE4500823694 /* TabBarItem.swift in Sources */,
 				FC5196562C8728170046552E /* AttractionScreen.swift in Sources */,
 				FC5D0F642C85A8C100823694 /* ContentView.swift in Sources */,
 				FC5D0F8E2C85CC3900823694 /* Attraction.swift in Sources */,
+				FCF396AE2C8894CB00654705 /* SeparateTime.swift in Sources */,
 				FC51965E2C87419A0046552E /* ImageLoader.swift in Sources */,
+				FCF396A62C88678D00654705 /* CornerRadius+modifiers.swift in Sources */,
 				FC5D0F812C85B00C00823694 /* TabBarView.swift in Sources */,
+				FCF396A82C8868C000654705 /* CircleButton.swift in Sources */,
 				FC5196512C871B3A0046552E /* MainContinentCardView.swift in Sources */,
+				FCF396A22C88647300654705 /* SearchBar.swift in Sources */,
+				FCF396B12C88974B00654705 /* SegmentedControl.swift in Sources */,
 				FC5D0F832C85B27C00823694 /* VStack+modifiers.swift in Sources */,
 				FC5D0F622C85A8C100823694 /* CitySecretsApp.swift in Sources */,
 				FC5D0F8C2C85B3E600823694 /* ProfileScreen.swift in Sources */,
+				FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +534,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -540,7 +568,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

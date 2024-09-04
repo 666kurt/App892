@@ -20,6 +20,7 @@ struct ContentView: View {
             
             TabBarView(selectedScreen: $router.selectedScreen)
         }
+        .environmentObject(router)
     }
 }
 

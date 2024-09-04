@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AttractionCardView: View {
     
+    @EnvironmentObject private var mainViewModel: MainViewModel
     let attraction: Attraction
     
     var body: some View {
@@ -9,10 +10,13 @@ struct AttractionCardView: View {
             .frame(height: 170)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .overlay(cardTitle, alignment: .topLeading)
-            .overlay(cartButtons, alignment: .topTrailing)
             .overlay(timeView, alignment: .bottomLeading)
+            .overlay(reviewButton, alignment: .bottomTrailing)
+            .overlay(cartButton, alignment: .topTrailing)
     }
 }
+
+// MARK: subviews
 
 extension AttractionCardView {
     
@@ -27,12 +31,25 @@ extension AttractionCardView {
         .foregroundColor(.white)
     }
     
-    private var cartButtons: some View {
-        HStack(spacing: 10) {
-            CartButtonsView(image: "heart.fill", action: {})
-            CartButtonsView(image: "location.fill", action: {})
-        }
-        .padding()
+    private var cartButton: some View {
+        Circle()
+            .foregroundColor(.theme.background.bgGray)
+            .frame(width: 43, height: 43)
+            .overlay(
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(attraction.isFavorites
+                        ? .red
+                        : .accentColor
+                    )
+            )
+            .onTapGesture {
+                withAnimation(.easeInOut) {
+                    mainViewModel.toggleFavorite(for: attraction)
+                }
+            }
+            .padding()
     }
     
     private var timeView: some View {
@@ -43,32 +60,24 @@ extension AttractionCardView {
         .padding()
     }
     
-    private func separateTime(for time: String) -> [String] {
-        return time.components(separatedBy: "-")
+    private var reviewButton: some View {
+        NavigationLink {
+            AttractionDetailView(attraction: attraction)
+        } label: {
+            Text("Preview")
+                .font(.footnote)
+                .foregroundColor(.theme.text.textGreen)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 7.5)
+                .background(Color.white)
+                .clipShape(Capsule())
+                .padding()
+        }
     }
-    
+
 }
 
-struct CartButtonsView: View {
-    
-    let image: String
-    let action: () -> Void
-    
-    var body: some View {
-        Circle()
-            .foregroundColor(.white)
-            .frame(width: 25, height: 25)
-            .overlay(
-                Image(systemName: image)
-                    .resizable()
-                    .frame(width: 12, height: 12)
-                    .foregroundColor(.accentColor)
-            )
-            .onTapGesture {
-                action()
-            }
-    }
-}
+// MARK: additional reusable views
 
 struct CartTimeView: View {
     
@@ -86,13 +95,7 @@ struct CartTimeView: View {
 }
 
 #Preview {
-    AttractionCardView(attraction: Attraction(name: "Eiffel Tower",
-                                              country: "France",
-                                              continent: "europe",
-                                              coordinates: Attraction.Coordinates(latitude: 48.8606, longitude: 2.3376),
-                                              description: "The Eiffel Tower is an iconic wrought-iron lattice tower in Paris, standing tall at 324 meters. It was designed by Gustave Eiffel and built for the 1889 World's Fair, marking the 100th anniversary of the French Revolution. The tower offers stunning panoramic views of Paris from its observation decks and is one of the most visited paid monuments in the world.",
-                                              category: "historical building",
-                                              image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                                              hours: "09:30 AM - 11:45 PM"))
+    AttractionCardView(attraction: Attraction.preview)
+        .environmentObject(MainViewModel())
     .padding()
 }

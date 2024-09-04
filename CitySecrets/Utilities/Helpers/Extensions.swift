@@ -1,6 +1,8 @@
 import Foundation
 import SwiftUI
 
+// MARK: colors
+
 extension Color {
     init(hex: String) {
         var cleanHexCode = hex.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -57,4 +59,12 @@ struct ColorTheme {
     let background = BackgroundColors()
     let other = OtherColors()
     
+}
+
+// MARK: string
+
+extension String {
+    func capitalizeFirstLetter() -> String {
+        return self.prefix(1).uppercased() + self.dropFirst()
+    }
 }
