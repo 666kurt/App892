@@ -37,6 +37,12 @@
 		FCF396AE2C8894CB00654705 /* SeparateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AD2C8894CB00654705 /* SeparateTime.swift */; };
 		FCF396B12C88974B00654705 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B02C88974B00654705 /* SegmentedControl.swift */; };
 		FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */; };
+		FCFB0C102C89A725002CAE89 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */; };
+		FCFB0C122C89B646002CAE89 /* AnimatePlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C112C89B646002CAE89 /* AnimatePlaceholderModifier.swift */; };
+		FCFB0C142C89BFDD002CAE89 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C132C89BFDD002CAE89 /* ProfileViewModel.swift */; };
+		FCFB0C172C89C135002CAE89 /* ProfileButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C162C89C135002CAE89 /* ProfileButtonsView.swift */; };
+		FCFB0C1A2C89C627002CAE89 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C192C89C627002CAE89 /* SettingScreen.swift */; };
+		FCFB0C1D2C89C85A002CAE89 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C1C2C89C85A002CAE89 /* SettingButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,12 @@
 		FCF396AD2C8894CB00654705 /* SeparateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateTime.swift; sourceTree = "<group>"; };
 		FCF396B02C88974B00654705 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionPopularCardView.swift; sourceTree = "<group>"; };
+		FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		FCFB0C112C89B646002CAE89 /* AnimatePlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatePlaceholderModifier.swift; sourceTree = "<group>"; };
+		FCFB0C132C89BFDD002CAE89 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FCFB0C162C89C135002CAE89 /* ProfileButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonsView.swift; sourceTree = "<group>"; };
+		FCFB0C192C89C627002CAE89 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
+		FCFB0C1C2C89C85A002CAE89 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +195,7 @@
 				FC5196592C873D540046552E /* Attraction */,
 				FC5D0F872C85B39A00823694 /* Favorites */,
 				FC5D0F8A2C85B3CD00823694 /* Profile */,
+				FCFB0C182C89C611002CAE89 /* Settings */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 			children = (
 				FC5D0F822C85B27C00823694 /* VStack+modifiers.swift */,
 				FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */,
+				FCFB0C112C89B646002CAE89 /* AnimatePlaceholderModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 				FC5D0F772C85AB5500823694 /* Extensions.swift */,
 				FC5D0F7A2C85AC8000823694 /* Router.swift */,
 				FCF396AD2C8894CB00654705 /* SeparateTime.swift */,
+				FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -268,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				FC5D0F8B2C85B3E600823694 /* ProfileScreen.swift */,
+				FCFB0C132C89BFDD002CAE89 /* ProfileViewModel.swift */,
+				FCFB0C152C89C121002CAE89 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -279,6 +296,31 @@
 				FC5196532C871EA60046552E /* Continent.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FCFB0C152C89C121002CAE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB0C162C89C135002CAE89 /* ProfileButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCFB0C182C89C611002CAE89 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB0C192C89C627002CAE89 /* SettingScreen.swift */,
+				FCFB0C1B2C89C84F002CAE89 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FCFB0C1B2C89C84F002CAE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB0C1C2C89C85A002CAE89 /* SettingButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFB0C122C89B646002CAE89 /* AnimatePlaceholderModifier.swift in Sources */,
+				FCFB0C172C89C135002CAE89 /* ProfileButtonsView.swift in Sources */,
 				FCF396AC2C88802400654705 /* MapScreen.swift in Sources */,
 				FC5196542C871EA60046552E /* Continent.swift in Sources */,
 				FC51965C2C873F700046552E /* AttractionCardView.swift in Sources */,
@@ -362,6 +406,7 @@
 				FC5D0F892C85B3BC00823694 /* FavoritesScreen.swift in Sources */,
 				FC5D0F7B2C85AC8000823694 /* Router.swift in Sources */,
 				FC5D0F782C85AB5500823694 /* Extensions.swift in Sources */,
+				FCFB0C1A2C89C627002CAE89 /* SettingScreen.swift in Sources */,
 				FCF396AA2C886FAA00654705 /* MapView.swift in Sources */,
 				FC5D0F7E2C85AE4500823694 /* TabBarItem.swift in Sources */,
 				FC5196562C8728170046552E /* AttractionScreen.swift in Sources */,
@@ -375,10 +420,13 @@
 				FC5196512C871B3A0046552E /* MainContinentCardView.swift in Sources */,
 				FCF396A22C88647300654705 /* SearchBar.swift in Sources */,
 				FCF396B12C88974B00654705 /* SegmentedControl.swift in Sources */,
+				FCFB0C142C89BFDD002CAE89 /* ProfileViewModel.swift in Sources */,
 				FC5D0F832C85B27C00823694 /* VStack+modifiers.swift in Sources */,
 				FC5D0F622C85A8C100823694 /* CitySecretsApp.swift in Sources */,
 				FC5D0F8C2C85B3E600823694 /* ProfileScreen.swift in Sources */,
+				FCFB0C102C89A725002CAE89 /* ImageCache.swift in Sources */,
 				FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */,
+				FCFB0C1D2C89C85A002CAE89 /* SettingButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,24 +2,32 @@ import SwiftUI
 
 struct URLImageView: View {
     @ObservedObject var imageLoader = ImageLoader()
-    let placeholder: Image
     let url: String
+    @State private var isLoading: Bool = true
 
-    init(url: String, placeholder: Image = Image(systemName: "photo")) {
-        self.placeholder = placeholder
+    init(url: String) {
         self.url = url
         self.imageLoader.loadImage(from: url)
     }
-    
+
     var body: some View {
-        if let image = imageLoader.image {
-            Image(uiImage: image)
-                .resizable()
-                .scaledToFill()
-        } else {
-            placeholder
-                .resizable()
-                .scaledToFill()
+        ZStack {
+            if let image = imageLoader.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFill()
+                    .onAppear {
+                        isLoading = false
+                    }
+            } else {
+                Rectangle()
+                    .fill(Color.gray.opacity(0.4))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .animatePlaceholder(isLoading: $isLoading)
+            }
+        }
+        .onAppear {
+            isLoading = true
         }
     }
 }

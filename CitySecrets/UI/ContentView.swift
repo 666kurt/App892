@@ -4,23 +4,27 @@ struct ContentView: View {
     
     @StateObject var router = Router.shared
     @StateObject var attractionViewModel = MainViewModel()
+    @StateObject var profileViewModel = ProfileViewModel()
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            
-            switch router.selectedScreen {
-            case .main:
-                MainScreen()
-                    .environmentObject(attractionViewModel)
-            case .favorites:
-                FavoritesScreen()
-            case .profile:
-                ProfileScreen()
+        NavigationView {
+            ZStack(alignment: .bottom) {
+                
+                switch router.selectedScreen {
+                case .main:
+                    MainScreen()
+                case .favorites:
+                    FavoritesScreen()
+                case .profile:
+                    ProfileScreen()
+                        .environmentObject(profileViewModel)
+                }
+                
+                TabBarView(selectedScreen: $router.selectedScreen)
             }
-            
-            TabBarView(selectedScreen: $router.selectedScreen)
         }
         .environmentObject(router)
+        .environmentObject(attractionViewModel)
     }
 }
 

@@ -29,16 +29,16 @@ struct AttractionScreen: View {
             
             attractionList
             
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    HStack {
-                        Image(systemName: "mappin.and.ellipse")
-                            .foregroundColor(.theme.text.textGreen)
-                        Text(continent.capitalizeFirstLetter())
-                            .font(.subheadline.weight(.semibold))
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        HStack {
+                            Image(systemName: "mappin.and.ellipse")
+                                .foregroundColor(.theme.text.textGreen)
+                            Text(continent.capitalizeFirstLetter())
+                                .font(.subheadline.weight(.semibold))
+                        }
                     }
                 }
-            }
             
         }
         .vstackModifier()
@@ -48,14 +48,14 @@ struct AttractionScreen: View {
 extension AttractionScreen {
     
     private var attractionList: some View {
-            ScrollView(showsIndicators: false) {
-                LazyVStack(spacing: 10) {
-                    ForEach(filteredAttractions, id: \.self) { attraction in
-                        AttractionCardView(attraction: attraction)
-                    }
+        ScrollView(showsIndicators: false) {
+            LazyVStack(spacing: 10) {
+                ForEach(filteredAttractions, id: \.self) { attraction in
+                    AttractionCardView(attraction: attraction)
                 }
             }
         }
+    }
     
     private var filteredAttractions: [Attraction] {
         let categories = ["historical", "museum", "gallery"]
