@@ -5,6 +5,7 @@ struct VStackModifiers: ViewModifier {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.horizontal, 15)
+            .background(Color.white)
     }
 }
 

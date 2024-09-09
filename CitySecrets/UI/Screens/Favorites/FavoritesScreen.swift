@@ -6,21 +6,28 @@ struct FavoritesScreen: View {
     @EnvironmentObject private var router: Router
     
     var body: some View {
-        VStack(spacing: 15) {
-            
-            SearchBar(searchText: $mainViewModel.text)
-            
-            if mainViewModel.filteredFavoritesAttractions.isEmpty {
-                emptyView
-            } else {
-                VStack(spacing: 20) {
-                    routeImage
-                    favoritesListView
+        ZStack {
+            VStack(spacing: 15) {
+                
+                SearchBar(searchText: $mainViewModel.text)
+                
+                if mainViewModel.filteredFavoritesAttractions.isEmpty {
+                    emptyView
+                } else {
+                    VStack(spacing: 20) {
+                        routeImage
+                        favoritesListView
+                    }
                 }
             }
+            .vstackModifier()
             
+            if (router.placeSelection) {
+                RouteSelectionView()
+                    .environmentObject(mainViewModel)
+                    .environmentObject(router)
+            }
         }
-        .vstackModifier()
     }
 }
 
@@ -77,7 +84,7 @@ extension FavoritesScreen {
             .clipShape(Capsule())
             .padding(.bottom, 13)
             .onTapGesture {
-                // create route
+                router.showPlaceSelection()
             }
     }
     

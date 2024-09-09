@@ -9,7 +9,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottom) {
-                
                 switch router.selectedScreen {
                 case .main:
                     MainScreen()
@@ -19,10 +18,10 @@ struct ContentView: View {
                     ProfileScreen()
                         .environmentObject(profileViewModel)
                 }
-                
                 TabBarView(selectedScreen: $router.selectedScreen)
             }
         }
+        .colorScheme(.light)
         .environmentObject(router)
         .environmentObject(attractionViewModel)
     }

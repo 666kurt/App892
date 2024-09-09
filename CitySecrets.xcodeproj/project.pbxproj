@@ -28,21 +28,24 @@
 		FC5D0F8C2C85B3E600823694 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F8B2C85B3E600823694 /* ProfileScreen.swift */; };
 		FC5D0F8E2C85CC3900823694 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F8D2C85CC3900823694 /* Attraction.swift */; };
 		FC5D0F912C85CD5D00823694 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5D0F902C85CD5D00823694 /* MainViewModel.swift */; };
+		FC8336012C8EEAE900F3DA4C /* RouteSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336002C8EEAE900F3DA4C /* RouteSelectionView.swift */; };
+		FC8336032C8EEE1700F3DA4C /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336022C8EEE1700F3DA4C /* RouteMapView.swift */; };
+		FC8336052C8EF15C00F3DA4C /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336042C8EF15C00F3DA4C /* MapViewRepresentable.swift */; };
 		FCF396A22C88647300654705 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A12C88647300654705 /* SearchBar.swift */; };
 		FCF396A42C8864F100654705 /* AttractionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A32C8864F100654705 /* AttractionDetailView.swift */; };
 		FCF396A62C88678D00654705 /* CornerRadius+modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */; };
 		FCF396A82C8868C000654705 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A72C8868C000654705 /* CircleButton.swift */; };
 		FCF396AA2C886FAA00654705 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A92C886FAA00654705 /* MapView.swift */; };
-		FCF396AC2C88802400654705 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AB2C88802400654705 /* MapScreen.swift */; };
+		FCF396AC2C88802400654705 /* AttractionMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AB2C88802400654705 /* AttractionMapView.swift */; };
 		FCF396AE2C8894CB00654705 /* SeparateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396AD2C8894CB00654705 /* SeparateTime.swift */; };
 		FCF396B12C88974B00654705 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B02C88974B00654705 /* SegmentedControl.swift */; };
 		FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */; };
-		FCFB0C102C89A725002CAE89 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */; };
 		FCFB0C122C89B646002CAE89 /* AnimatePlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C112C89B646002CAE89 /* AnimatePlaceholderModifier.swift */; };
 		FCFB0C142C89BFDD002CAE89 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C132C89BFDD002CAE89 /* ProfileViewModel.swift */; };
 		FCFB0C172C89C135002CAE89 /* ProfileButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C162C89C135002CAE89 /* ProfileButtonsView.swift */; };
 		FCFB0C1A2C89C627002CAE89 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C192C89C627002CAE89 /* SettingScreen.swift */; };
 		FCFB0C1D2C89C85A002CAE89 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C1C2C89C85A002CAE89 /* SettingButtonView.swift */; };
+		FCFB0C1F2C89EBC3002CAE89 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB0C1E2C89EBC3002CAE89 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,21 +71,24 @@
 		FC5D0F8B2C85B3E600823694 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		FC5D0F8D2C85CC3900823694 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FC5D0F902C85CD5D00823694 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FC8336002C8EEAE900F3DA4C /* RouteSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSelectionView.swift; sourceTree = "<group>"; };
+		FC8336022C8EEE1700F3DA4C /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		FC8336042C8EF15C00F3DA4C /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
 		FCF396A12C88647300654705 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FCF396A32C8864F100654705 /* AttractionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailView.swift; sourceTree = "<group>"; };
 		FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CornerRadius+modifiers.swift"; sourceTree = "<group>"; };
 		FCF396A72C8868C000654705 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		FCF396A92C886FAA00654705 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		FCF396AB2C88802400654705 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		FCF396AB2C88802400654705 /* AttractionMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionMapView.swift; sourceTree = "<group>"; };
 		FCF396AD2C8894CB00654705 /* SeparateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateTime.swift; sourceTree = "<group>"; };
 		FCF396B02C88974B00654705 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionPopularCardView.swift; sourceTree = "<group>"; };
-		FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		FCFB0C112C89B646002CAE89 /* AnimatePlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatePlaceholderModifier.swift; sourceTree = "<group>"; };
 		FCFB0C132C89BFDD002CAE89 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FCFB0C162C89C135002CAE89 /* ProfileButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonsView.swift; sourceTree = "<group>"; };
 		FCFB0C192C89C627002CAE89 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		FCFB0C1C2C89C85A002CAE89 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
+		FCFB0C1E2C89EBC3002CAE89 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +133,7 @@
 			children = (
 				FC51965B2C873F700046552E /* AttractionCardView.swift */,
 				FCF396A32C8864F100654705 /* AttractionDetailView.swift */,
-				FCF396AB2C88802400654705 /* MapScreen.swift */,
+				FCF396AB2C88802400654705 /* AttractionMapView.swift */,
 				FCF396B22C88B62700654705 /* AttractionPopularCardView.swift */,
 			);
 			path = View;
@@ -247,7 +253,7 @@
 				FC5D0F772C85AB5500823694 /* Extensions.swift */,
 				FC5D0F7A2C85AC8000823694 /* Router.swift */,
 				FCF396AD2C8894CB00654705 /* SeparateTime.swift */,
-				FCFB0C0F2C89A725002CAE89 /* ImageCache.swift */,
+				FCFB0C1E2C89EBC3002CAE89 /* ImagePicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5D0F882C85B3BC00823694 /* FavoritesScreen.swift */,
+				FC8336082C8F720D00F3DA4C /* View */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -296,6 +303,16 @@
 				FC5196532C871EA60046552E /* Continent.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FC8336082C8F720D00F3DA4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC8336002C8EEAE900F3DA4C /* RouteSelectionView.swift */,
+				FC8336022C8EEE1700F3DA4C /* RouteMapView.swift */,
+				FC8336042C8EF15C00F3DA4C /* MapViewRepresentable.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FCFB0C152C89C121002CAE89 /* View */ = {
@@ -396,9 +413,11 @@
 			files = (
 				FCFB0C122C89B646002CAE89 /* AnimatePlaceholderModifier.swift in Sources */,
 				FCFB0C172C89C135002CAE89 /* ProfileButtonsView.swift in Sources */,
-				FCF396AC2C88802400654705 /* MapScreen.swift in Sources */,
+				FCF396AC2C88802400654705 /* AttractionMapView.swift in Sources */,
+				FCFB0C1F2C89EBC3002CAE89 /* ImagePicker.swift in Sources */,
 				FC5196542C871EA60046552E /* Continent.swift in Sources */,
 				FC51965C2C873F700046552E /* AttractionCardView.swift in Sources */,
+				FC8336012C8EEAE900F3DA4C /* RouteSelectionView.swift in Sources */,
 				FC5196602C8741B90046552E /* URLImageView.swift in Sources */,
 				FC5D0F862C85B37800823694 /* MainScreen.swift in Sources */,
 				FCF396A42C8864F100654705 /* AttractionDetailView.swift in Sources */,
@@ -410,6 +429,7 @@
 				FCF396AA2C886FAA00654705 /* MapView.swift in Sources */,
 				FC5D0F7E2C85AE4500823694 /* TabBarItem.swift in Sources */,
 				FC5196562C8728170046552E /* AttractionScreen.swift in Sources */,
+				FC8336052C8EF15C00F3DA4C /* MapViewRepresentable.swift in Sources */,
 				FC5D0F642C85A8C100823694 /* ContentView.swift in Sources */,
 				FC5D0F8E2C85CC3900823694 /* Attraction.swift in Sources */,
 				FCF396AE2C8894CB00654705 /* SeparateTime.swift in Sources */,
@@ -424,7 +444,7 @@
 				FC5D0F832C85B27C00823694 /* VStack+modifiers.swift in Sources */,
 				FC5D0F622C85A8C100823694 /* CitySecretsApp.swift in Sources */,
 				FC5D0F8C2C85B3E600823694 /* ProfileScreen.swift in Sources */,
-				FCFB0C102C89A725002CAE89 /* ImageCache.swift in Sources */,
+				FC8336032C8EEE1700F3DA4C /* RouteMapView.swift in Sources */,
 				FCF396B32C88B62700654705 /* AttractionPopularCardView.swift in Sources */,
 				FCFB0C1D2C89C85A002CAE89 /* SettingButtonView.swift in Sources */,
 			);
@@ -566,6 +586,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -600,6 +621,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

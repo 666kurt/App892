@@ -39,7 +39,7 @@
         },
         "description": "The Colosseum in Rome is an ancient amphitheater that dates back to 70-80 AD. Known for its grand architecture and historical significance, it was the largest amphitheater ever built and could hold up to 80,000 spectators. The Colosseum hosted gladiatorial contests, public spectacles, and dramas based on Classical mythology. It remains one of the most enduring symbols of the Roman Empire.",
         "category": "historical",
-        "image": "https://example.com/colosseum.jpg",
+        "image": "https://images.unsplash.com/photo-1460722665083-c2599113f7e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": true,
         "isFavorites": false,
         "hours": "08:30 AM - 07:00 PM"
@@ -54,7 +54,7 @@
         },
         "description": "The Sagrada Familia is an awe-inspiring basilica in Barcelona, designed by renowned architect Antoni Gaudí. Construction began in 1882 and continues to this day, with the basilica's unique blend of Gothic and Art Nouveau styles making it a UNESCO World Heritage Site. Its intricate facades and towering spires create a surreal landscape that attracts millions of visitors each year.",
         "category": "historical",
-        "image": "https://example.com/sagrada_familia.jpg",
+        "image": "https://images.unsplash.com/photo-1550834415-4b47996578ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "09:00 AM - 08:00 PM"
@@ -69,7 +69,7 @@
         },
         "description": "The British Museum in London is a public institution dedicated to human history, art, and culture. Established in 1753, it houses a vast collection of artifacts from all over the world, including the Rosetta Stone, the Elgin Marbles, and the Egyptian mummies. The museum's galleries provide a journey through time, offering insights into the achievements of ancient civilizations.",
         "category": "museum",
-        "image": "https://example.com/british_museum.jpg",
+        "image": "https://images.unsplash.com/photo-1470215883992-c49406afc34f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "10:00 AM - 05:30 PM"
@@ -84,7 +84,7 @@
         },
         "description": "The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city, containing the remains of several historically significant buildings, including the Parthenon. Constructed in the 5th century BC, it stands as a symbol of the classical spirit and civilization of ancient Greece. The Acropolis offers a glimpse into the architectural and artistic achievements of the Athenian golden age.",
         "category": "historical",
-        "image": "https://example.com/acropolis.jpg",
+        "image": "https://images.unsplash.com/photo-1525077426767-cf97e02024ee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "08:00 AM - 08:00 PM"
@@ -99,7 +99,7 @@
         },
         "description": "The Prado Museum in Madrid is one of the most renowned art museums in the world, known for its rich collection of European art from the 12th to the early 20th century. It features masterpieces by artists such as Velázquez, Goya, and El Greco. The museum's vast collection offers a deep dive into Spanish art history and includes some of the most famous works of the Spanish Golden Age.",
         "category": "museum",
-        "image": "https://example.com/prado_museum.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1658506813192-074af2c51d66?q=80&w=2947&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "10:00 AM - 08:00 PM"
@@ -114,7 +114,7 @@
         },
         "description": "Notre-Dame Cathedral in Paris is a medieval Catholic cathedral known for its French Gothic architecture, flying buttresses, and stunning stained-glass windows. Completed in the 14th century, it has been the site of many significant historical events. Despite suffering significant damage in the 2019 fire, the cathedral remains a symbol of Parisian heritage and resilience.",
         "category": "historical",
-        "image": "https://example.com/notre_dame.jpg",
+        "image": "https://images.unsplash.com/photo-1555397227-cbcbc55768de?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": true,
         "isFavorites": false,
         "hours": "08:00 AM - 06:45 PM"
@@ -129,7 +129,7 @@
         },
         "description": "The Van Gogh Museum in Amsterdam houses the largest collection of Vincent van Gogh's paintings and drawings in the world. The museum's exhibits offer insight into the artist's life, his inspirations, and his influence on modern art. Highlights include the famous 'Sunflowers', 'The Bedroom', and 'Wheatfield with Crows', making it a must-visit for art enthusiasts.",
         "category": "gallery",
-        "image": "https://example.com/van_gogh_museum.jpg",
+        "image": "https://images.unsplash.com/photo-1680431899132-8f2aae173d57?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "09:00 AM - 06:00 PM"
@@ -144,9 +144,309 @@
         },
         "description": "The Rijksmuseum in Amsterdam is the national museum of the Netherlands, dedicated to Dutch arts and history. Its collection includes masterpieces from the Dutch Golden Age, such as Rembrandt's 'The Night Watch' and Vermeer's 'The Milkmaid'. The museum's stunning architecture and vast collections offer a comprehensive look at the Netherlands' cultural heritage.",
         "category": "museum",
-        "image": "https://example.com/rijksmuseum.jpg",
+        "image": "https://images.unsplash.com/photo-1654029261491-6092d8471a59?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "isRecommended": false,
         "isFavorites": false,
         "hours": "09:00 AM - 05:00 PM"
+    },
+    {
+        "name": "Great Wall of China",
+        "country": "China",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 40.4319,
+            "longitude": 116.5704
+        },
+        "description": "The Great Wall of China is a series of fortifications built across northern China to protect against invasions. Spanning over 13,000 miles, it is one of the most remarkable architectural feats in history, showcasing various dynasties' engineering skills and is a UNESCO World Heritage Site.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1601293506821-33e7c3c6a35e?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "06:00 AM - 07:00 PM"
+    },
+    {
+        "name": "Taj Mahal",
+        "country": "India",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 27.1751,
+            "longitude": 78.0421
+        },
+        "description": "The Taj Mahal is an ivory-white marble mausoleum in Agra, India, built in memory of Mumtaz Mahal, the wife of Mughal emperor Shah Jahan. Recognized as a symbol of love, it is an architectural masterpiece blending Islamic, Persian, Ottoman Turkish, and Indian styles and is a UNESCO World Heritage Site.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1506794511948-e9df14d4d9d0?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "06:00 AM - 07:00 PM"
+    },
+    {
+        "name": "Petra",
+        "country": "Jordan",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 30.3285,
+            "longitude": 35.4444
+        },
+        "description": "Petra is a historical and archaeological city in southern Jordan, famous for its rock-cut architecture and water conduit system. Once the capital of the Nabataean Kingdom, it is one of the New Seven Wonders of the World and a UNESCO World Heritage Site, attracting visitors with its breathtaking views and rich history.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1534732595064-254d635f0a86?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "06:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Table Mountain",
+        "country": "South Africa",
+        "continent": "africa",
+        "coordinates": {
+            "latitude": -33.9628,
+            "longitude": 18.4095
+        },
+        "description": "Table Mountain is a flat-topped mountain overlooking Cape Town, South Africa. It is a significant landmark and a national park known for its unique biodiversity and stunning views of the city and ocean. Visitors can hike to the summit or take a cable car for breathtaking panoramas.",
+        "category": "natural",
+        "image": "https://images.unsplash.com/photo-1597790860664-72e4f59b1c82?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:00 AM - 05:00 PM"
+    },
+    {
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "continent": "america",
+        "coordinates": {
+            "latitude": -13.1631,
+            "longitude": -72.5449
+        },
+        "description": "Machu Picchu is an ancient Incan citadel located in the Andes Mountains of Peru. Known for its sophisticated dry-stone construction and panoramic views, it is often referred to as the 'Lost City of the Incas' and is a UNESCO World Heritage Site, drawing tourists from around the globe.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "06:00 AM - 05:30 PM"
+    },
+    {
+        "name": "Statue of Liberty",
+        "country": "United States",
+        "continent": "america",
+        "coordinates": {
+            "latitude": 40.6892,
+            "longitude": -74.0445
+        },
+        "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor. A gift from France, it symbolizes freedom and democracy, welcoming immigrants arriving by sea. It stands at 151 feet tall and is a UNESCO World Heritage Site.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1533050373313-28f3d9c5c2f0?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:30 AM - 04:00 PM"
+    },
+    {
+        "name": "Christ the Redeemer",
+        "country": "Brazil",
+        "continent": "america",
+        "coordinates": {
+            "latitude": -22.9519,
+            "longitude": -43.2105
+        },
+        "description": "Christ the Redeemer is an iconic statue of Jesus Christ in Rio de Janeiro, Brazil. Standing 98 feet tall, it overlooks the city from the 700-meter peak of Corcovado Mountain. The statue is recognized as a symbol of Brazilian Christianity and offers stunning views of Rio.",
+        "category": "historical",
+        "image": "https://images.unsplash.com/photo-1515965692340-fb06e17a260f?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:00 AM - 07:00 PM"
+    },
+    {
+        "name": "Forbidden City",
+        "country": "China",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 39.9163,
+            "longitude": 116.3972
+        },
+        "description": "The Forbidden City in Beijing was the Chinese imperial palace from the Ming dynasty to the end of the Qing dynasty. It is a massive complex with over 980 buildings and has been a UNESCO World Heritage Site since 1987.",
+        "category": "historical",
+        "image": "https://example.com/forbidden_city.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:30 AM - 05:00 PM"
+    },
+    {
+        "name": "Angkor Wat",
+        "country": "Cambodia",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 13.4125,
+            "longitude": 103.8667
+        },
+        "description": "Angkor Wat is the largest religious monument in the world and a symbol of Cambodia. Built in the 12th century, it was originally a Hindu temple dedicated to Vishnu before becoming a Buddhist temple.",
+        "category": "historical",
+        "image": "https://example.com/angkor_wat.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "05:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Taj Mahal",
+        "country": "India",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 27.1751,
+            "longitude": 78.0421
+        },
+        "description": "The Taj Mahal is a white marble mausoleum in Agra, India, commissioned by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is recognized as one of the most beautiful buildings in the world.",
+        "category": "historical",
+        "image": "https://example.com/taj_mahal.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "06:00 AM - 06:30 PM"
+    },
+    {
+        "name": "National Museum of Korea",
+        "country": "South Korea",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 37.5236,
+            "longitude": 126.9801
+        },
+        "description": "The National Museum of Korea in Seoul is the largest museum in South Korea and houses a vast collection of artifacts ranging from ancient Korea to contemporary history.",
+        "category": "museum",
+        "image": "https://example.com/national_museum_korea.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "09:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Tokyo National Museum",
+        "country": "Japan",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 35.7189,
+            "longitude": 139.7745
+        },
+        "description": "The Tokyo National Museum is the oldest Japanese national museum, showcasing a large collection of art and archeological artifacts from Japan and other Asian cultures.",
+        "category": "museum",
+        "image": "https://example.com/tokyo_national_museum.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "09:30 AM - 05:00 PM"
+    },
+    {
+        "name": "Islamic Arts Museum Malaysia",
+        "country": "Malaysia",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 3.1415,
+            "longitude": 101.6869
+        },
+        "description": "The Islamic Arts Museum Malaysia in Kuala Lumpur displays an extensive collection of Islamic artifacts, ranging from textiles to ceramics, offering a deep insight into Islamic culture and history.",
+        "category": "museum",
+        "image": "https://example.com/islamic_arts_museum.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "09:30 AM - 06:00 PM"
+    },
+    {
+        "name": "Louvre Abu Dhabi",
+        "country": "United Arab Emirates",
+        "continent": "asia",
+        "coordinates": {
+            "latitude": 24.5331,
+            "longitude": 54.3957
+        },
+        "description": "Louvre Abu Dhabi is an art and civilization museum located in Abu Dhabi, UAE. Opened in 2017, it showcases works from various periods and regions, celebrating cultural connections.",
+        "category": "gallery",
+        "image": "https://example.com/louvre_abu_dhabi.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "10:00 AM - 08:00 PM"
+    },
+    {
+        "name": "Uffizi Gallery",
+        "country": "Italy",
+        "continent": "europe",
+        "coordinates": {
+            "latitude": 43.7687,
+            "longitude": 11.2555
+        },
+        "description": "The Uffizi Gallery in Florence is one of the most prominent art museums in the world, housing masterpieces from the Renaissance period, including works by Michelangelo, Botticelli, and Leonardo da Vinci.",
+        "category": "gallery",
+        "image": "https://example.com/uffizi_gallery.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:15 AM - 06:50 PM"
+    },
+    {
+        "name": "Zeitz MOCAA",
+        "country": "South Africa",
+        "continent": "africa",
+        "coordinates": {
+            "latitude": -33.9080,
+            "longitude": 18.4191
+        },
+        "description": "Zeitz Museum of Contemporary Art Africa (MOCAA) is the largest museum dedicated to contemporary art from Africa and its diaspora. Located in Cape Town, it features cutting-edge exhibits in a striking repurposed grain silo.",
+        "category": "gallery",
+        "image": "https://example.com/zeitz_mocaa.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "10:00 AM - 06:00 PM"
+    },
+    {
+        "name": "Great Zimbabwe Ruins",
+        "country": "Zimbabwe",
+        "continent": "africa",
+        "coordinates": {
+            "latitude": -20.2671,
+            "longitude": 30.9331
+        },
+        "description": "Great Zimbabwe is an ancient city in southeastern Zimbabwe that was the capital of the Kingdom of Zimbabwe during the Late Iron Age. The ruins, which cover nearly 730 hectares, provide evidence of a highly advanced civilization.",
+        "category": "historical",
+        "image": "https://example.com/great_zimbabwe.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "08:00 AM - 05:30 PM"
+    },
+    {
+        "name": "Robben Island",
+        "country": "South Africa",
+        "continent": "africa",
+        "coordinates": {
+            "latitude": -33.8067,
+            "longitude": 18.3662
+        },
+        "description": "Robben Island is known for housing political prisoners, including Nelson Mandela, during the apartheid era in South Africa. It is now a UNESCO World Heritage Site and a symbol of the struggle for freedom.",
+        "category": "historical",
+        "image": "https://example.com/robben_island.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "09:00 AM - 05:00 PM"
+    },
+    {
+        "name": "Smithsonian National Museum of American History",
+        "country": "United States",
+        "continent": "america",
+        "coordinates": {
+            "latitude": 38.8913,
+            "longitude": -77.0300
+        },
+        "description": "The Smithsonian National Museum of American History in Washington, D.C., is dedicated to preserving and displaying artifacts related to the history and culture of the United States.",
+        "category": "museum",
+        "image": "https://example.com/smithsonian_history.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "10:00 AM - 05:30 PM"
+    },
+    {
+        "name": "Museum of Modern Art",
+        "country": "United States",
+        "continent": "america",
+        "coordinates": {
+            "latitude": 40.7614,
+            "longitude": -73.9776
+        },
+        "description": "The Museum of Modern Art (MoMA) in New York City is one of the most influential modern art museums in the world, showcasing contemporary art and culture through exhibitions and collections.",
+        "category": "gallery",
+        "image": "https://example.com/moma.jpg",
+        "isRecommended": true,
+        "isFavorites": false,
+        "hours": "10:30 AM - 05:30 PM"
     }
 ]

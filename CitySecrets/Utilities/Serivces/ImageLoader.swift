@@ -6,7 +6,7 @@ final class ImageLoader: ObservableObject {
     private var cancellable: AnyCancellable?
 
     func loadImage(from url: String) {
-        if let cachedImage = ImageCache.shared.object(forKey: url as NSString) {
+        if let cachedImage = NSCache<NSString, UIImage>().object(forKey: url as NSString) {
             self.image = cachedImage
             return
         }
@@ -21,7 +21,7 @@ final class ImageLoader: ObservableObject {
                 guard let self = self else { return }
                 
                 if let downloadedImage = downloadedImage {
-                    ImageCache.shared.setObject(downloadedImage, forKey: url as NSString)
+                    NSCache<NSString, UIImage>().setObject(downloadedImage, forKey: url as NSString)
                     self.image = downloadedImage
                 }
             }

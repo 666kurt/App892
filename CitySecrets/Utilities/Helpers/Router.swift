@@ -13,6 +13,7 @@ enum Screens: String, Identifiable {
 
 enum Sheet: String, Identifiable {
     case map
+    case imagePicker
     
     var id: String {
         self.rawValue
@@ -24,9 +25,9 @@ final class Router: ObservableObject {
     static let shared = Router()
     private init() {}
     
-    @Published var navigationPath = Path()
     @Published var selectedScreen: Screens = .main
     @Published var sheet: Sheet?
+    @Published var placeSelection: Bool = false
     
     func present(sheet: Sheet) {
         self.sheet = sheet
@@ -36,13 +37,18 @@ final class Router: ObservableObject {
         self.sheet = nil
     }
     
-    @ViewBuilder
-    func build(sheet: Sheet, lat: Double, lon: Double) -> some View {
-        switch sheet {
-        case .map:
-            MapScreen(lat: lat, lon: lon)
-                .ignoresSafeArea()
-        }
+    func showPlaceSelection() {
+        placeSelection.toggle()
     }
     
+    @ViewBuilder
+    func build(sheet: Sheet, lat: Double = 0.0, lon: Double = 0.0, onImagePicked: @escaping (UIImage) -> Void = { _ in }) -> some View {
+        switch sheet {
+        case .map:
+            AttractionMapView(lat: lat, lon: lon)
+                .ignoresSafeArea()
+        case .imagePicker:
+            ImagePicker(onImagePicked: onImagePicked)
+        }
+    }
 }

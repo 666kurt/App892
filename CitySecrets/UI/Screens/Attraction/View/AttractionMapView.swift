@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MapScreen: View {
+struct AttractionMapView: View {
     
     let lat: Double
     let lon: Double
@@ -14,7 +14,7 @@ struct MapScreen: View {
     }
 }
 
-extension MapScreen {
+extension AttractionMapView {
     
     private var dismissButton: some View {
         Image(systemName: "xmark.circle.fill")
@@ -30,6 +30,6 @@ extension MapScreen {
 }
 
 #Preview {
-    MapScreen(lat: 48.8584, lon: 2.2945)
+    AttractionMapView(lat: 48.8584, lon: 2.2945)
         .environmentObject(Router.shared)
 }
