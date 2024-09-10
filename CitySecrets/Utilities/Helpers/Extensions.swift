@@ -68,3 +68,11 @@ extension String {
         return self.prefix(1).uppercased() + self.dropFirst()
     }
 }
+
+// MARK: view
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}

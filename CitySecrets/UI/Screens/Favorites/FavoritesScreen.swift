@@ -64,6 +64,7 @@ extension FavoritesScreen {
                 }
             }
         }
+        .padding(.bottom, 50)
     }
     
     private var routeImage: some View {

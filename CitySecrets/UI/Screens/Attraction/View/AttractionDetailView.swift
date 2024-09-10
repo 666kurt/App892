@@ -1,33 +1,38 @@
 import SwiftUI
 import MapKit
+import SDWebImageSwiftUI
 
 struct AttractionDetailView: View {
     
     let attraction: Attraction
     @EnvironmentObject var router: Router
+    @State private var isLoading: Bool = true
     
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .top) {
                 
-                URLImageView(url: attraction.image)
-                    .frame(width: geo.size.width, height: geo.size.height * 0.5)
-                    .ignoresSafeArea(edges: .top)
-                    .overlay(timeView, alignment: .bottomLeading)
-                
+                WebImage(url: URL(string: attraction.image)) { image in
+                    image
+                        .resizable()
+                        .frame(width: geo.size.width, height: geo.size.height * 0.5)
+                        .ignoresSafeArea(edges: .top)
+                        .overlay(timeView, alignment: .bottomLeading)
+                } placeholder: {
+                    Rectangle()
+                        .fill(Color.gray.opacity(0.2))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .animatePlaceholder(isLoading: $isLoading)
+                }
+
                 VStack(spacing: 25) {
                     HStack {
-                        
                         titleView
-                        
                         Spacer()
-                        
                         CircleButton(image: "location.fill", action: {
                             router.present(sheet: .map)
                         })
-                      
                     }
-                    
                     contentView
                 }
                 .padding(.horizontal, 15)
@@ -86,3 +91,6 @@ extension AttractionDetailView {
     AttractionDetailView(attraction: Attraction.preview)
         .environmentObject(Router.shared)
 }
+
+
+

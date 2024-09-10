@@ -55,6 +55,7 @@ extension AttractionScreen {
                 }
             }
         }
+        .padding(.bottom, 50)
     }
     
     private var filteredAttractions: [Attraction] {

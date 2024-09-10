@@ -1,17 +1,19 @@
-//
-//  CitySecretsApp.swift
-//  CitySecrets
-//
-//  Created by Максим Шишлов on 02.09.2024.
-//
-
 import SwiftUI
 
 @main
 struct CitySecretsApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    @State private var showOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding") == false
+
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            
+            SplashScreen(showOnboarding: $showOnboarding)
+
         }
     }
 }

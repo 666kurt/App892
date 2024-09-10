@@ -3,6 +3,7 @@ import MapKit
 
 struct RouteMapView: View {
     
+    @EnvironmentObject private var router: Router
     let start: Attraction
     let end: Attraction
     
@@ -14,6 +15,9 @@ struct RouteMapView: View {
                                         longitude: end.coordinates.longitude)
         )
         .edgesIgnoringSafeArea(.all)
+        .onDisappear() {
+            router.showPlaceSelection()
+        }
     }
 }
 

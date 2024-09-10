@@ -1,18 +1,29 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct AttractionCardView: View {
     
     @EnvironmentObject private var mainViewModel: MainViewModel
     let attraction: Attraction
+    @State private var isLoading: Bool = true
     
     var body: some View {
-        URLImageView(url: attraction.image)
-            .frame(height: 170)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(cardTitle, alignment: .topLeading)
-            .overlay(timeView, alignment: .bottomLeading)
-            .overlay(reviewButton, alignment: .bottomTrailing)
-            .overlay(cartButton, alignment: .topTrailing)
+        WebImage(url: URL(string: attraction.image)) { image in
+            image
+                .resizable()
+                .frame(height: 170)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .overlay(cardTitle, alignment: .topLeading)
+                .overlay(timeView, alignment: .bottomLeading)
+                .overlay(reviewButton, alignment: .bottomTrailing)
+                .overlay(cartButton, alignment: .topTrailing)
+        } placeholder: {
+            Rectangle()
+                .fill(Color.gray.opacity(0.2))
+                .frame(height: 170)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .animatePlaceholder(isLoading: $isLoading)
+        }
     }
 }
 
@@ -39,7 +50,7 @@ extension AttractionCardView {
                 Image(systemName: "heart.fill")
                     .resizable()
                     .frame(width: 18, height: 18)
-                    .foregroundColor(attraction.isFavorites
+                    .foregroundColor(mainViewModel.favoritesStatus[attraction.name] == true
                         ? .red
                         : .accentColor
                     )

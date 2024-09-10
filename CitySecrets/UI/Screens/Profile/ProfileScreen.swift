@@ -22,15 +22,15 @@ struct ProfileScreen: View {
             VStack(spacing: 12) {
                 ProfileButtonsView(title: "Contact us",
                                    image: "bubble.fill",
-                                   url: "https://google.com",
+                                   url: "https://www.termsfeed.com/live/368771ae-d435-4f3a-87ed-b86d40cb8278",
                                    isLink: true)
                 ProfileButtonsView(title: "Terms of use",
-                                   image: "list.bullet.rectangle.portrait",
+                                   image: "https://www.termsfeed.com/live/368771ae-d435-4f3a-87ed-b86d40cb8278",
                                    url: "https://google.com",
                                    isLink: true)
                 ProfileButtonsView(title: "Privacy",
                                    image: "shield.fill",
-                                   url: "https://google.com",
+                                   url: "https://www.termsfeed.com/live/777d1ea3-7bf4-4945-9756-b2da2221b1f5",
                                    isLink: true)
                 
                 ProfileButtonsView(title: "Settings",
@@ -41,12 +41,14 @@ struct ProfileScreen: View {
                 Spacer()
             }
             .vstackModifier()
-            
         }
         .sheet(item: $router.sheet) { sheet in
             router.build(sheet: sheet) { image in
                 profileViewModel.profileImage = image
             }
+        }
+        .onTapGesture {
+            hideKeyboard()
         }
     }
 }
@@ -77,7 +79,6 @@ extension ProfileScreen {
         .onTapGesture {
             router.present(sheet: .imagePicker)
         }
-        
     }
     
     private var nameTextField: some View {
@@ -90,15 +91,12 @@ extension ProfileScreen {
                 .font(.title3.weight(.semibold))
                 .foregroundColor(.accentColor)
                 .padding(.bottom, 16)
-            
-            
-            
+                        
             Rectangle()
                 .frame(width: 146, height: 1)
                 .foregroundColor(.theme.background.bgMediumGray)
         }
     }
-    
 }
 
 #Preview {

@@ -1,62 +1,68 @@
 import Combine
 import Foundation
+import Firebase
+import FirebaseDatabase
 
 final class MainViewModel: ObservableObject {
     
     @Published var attraction: [Attraction] = []
     @Published var text: String = ""
     @Published var selectedIndex = 0
+    @Published var favoritesStatus: [String: Bool] = [:]
     
     private let favoritesKey = "favoritesAttractions"
 
     init() {
-        loadJSON()
+        loadFromFirebase()
         loadFavorites()
     }
-    
-    // Загрузка данных из JSON
-    func loadJSON() {
-        if let url = Bundle.main.url(forResource: "attraction", withExtension: "json") {
+
+    // Загрузка данных из firebase
+    func loadFromFirebase() {
+        let ref = Database.database().reference().child("attractions")
+        
+        ref.observeSingleEvent(of: .value) { snapshot in
+            guard let value = snapshot.value as? [[String: Any]] else {
+                print("Error: Could not fetch data from Firebase")
+                return
+            }
+            
             do {
-                let data = try Data(contentsOf: url)
+                let jsonData = try JSONSerialization.data(withJSONObject: value)
                 let decoder = JSONDecoder()
-                let decodedData = try decoder.decode([Attraction].self, from: data)
+                let decodedData = try decoder.decode([Attraction].self, from: jsonData)
                 DispatchQueue.main.async {
                     self.attraction = decodedData
                     self.loadFavorites()
                 }
             } catch {
-                print("Failed to decode JSON: \(error)")
+                print("Error decoding data: \(error)")
             }
-        } else {
-            print("JSON file not found.")
         }
     }
     
     // Сохранение избранных достопримечательностей
     func saveFavorites() {
-        let favoriteNames = attraction.filter { $0.isFavorites }.map { $0.name }
+        let favoriteNames = favoritesStatus.filter { $0.value }.map { $0.key }
         UserDefaults.standard.set(favoriteNames, forKey: favoritesKey)
     }
     
     // Загрузка избранных достопримечательностей
     func loadFavorites() {
         let favoriteNames = UserDefaults.standard.stringArray(forKey: favoritesKey) ?? []
-        for (index, attraction) in attraction.enumerated() {
-            if favoriteNames.contains(attraction.name) {
-                self.attraction[index].isFavorites = true
-            } else {
-                self.attraction[index].isFavorites = false
-            }
+        for name in favoriteNames {
+            favoritesStatus[name] = true
         }
     }
     
     // Переключение избранного статуса
     func toggleFavorite(for attraction: Attraction) {
-        if let index = self.attraction.firstIndex(where: { $0.name == attraction.name }) {
-            self.attraction[index].isFavorites.toggle()
-            saveFavorites()
+        if let currentStatus = favoritesStatus[attraction.name] {
+            favoritesStatus[attraction.name] = !currentStatus
+        } else {
+            favoritesStatus[attraction.name] = true
         }
+        saveFavorites()
     }
     
     // Фильтр всех достопримечательностей
@@ -76,7 +82,7 @@ final class MainViewModel: ObservableObject {
     
     // Избранные достопримечательности
     var favoritesAttractions: [Attraction] {
-        attraction.filter { $0.isFavorites }
+        attraction.filter { favoritesStatus[$0.name] == true }
     }
     
     // Рекомендованные достопримечательности

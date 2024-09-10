@@ -1,14 +1,27 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct AttractionPopularCardView: View {
     
     let attraction: Attraction
-    
+    @State private var isLoading: Bool = true
+
     var body: some View {
-        URLImageView(url: attraction.image)
-            .frame(width: 170, height: 130)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(leftContent, alignment: .topLeading)
+        
+        WebImage(url: URL(string: attraction.image)) { image in
+            image
+                .resizable()
+                .frame(width: 170, height: 130)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .overlay(leftContent, alignment: .topLeading)
+        } placeholder: {
+            Rectangle()
+                .fill(Color.gray.opacity(0.2))
+                .frame(width: 170, height: 130)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .animatePlaceholder(isLoading: $isLoading)
+        }
+
     }
 }
 

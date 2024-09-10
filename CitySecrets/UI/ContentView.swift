@@ -19,7 +19,9 @@ struct ContentView: View {
                         .environmentObject(profileViewModel)
                 }
                 TabBarView(selectedScreen: $router.selectedScreen)
+                    .offset(y: 10)
             }
+            .ignoresSafeArea(.keyboard)
         }
         .colorScheme(.light)
         .environmentObject(router)

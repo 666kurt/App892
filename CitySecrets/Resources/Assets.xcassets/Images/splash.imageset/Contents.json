@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Экран загрузки.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
