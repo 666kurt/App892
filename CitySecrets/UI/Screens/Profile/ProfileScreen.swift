@@ -25,8 +25,8 @@ struct ProfileScreen: View {
                                    url: "https://www.termsfeed.com/live/368771ae-d435-4f3a-87ed-b86d40cb8278",
                                    isLink: true)
                 ProfileButtonsView(title: "Terms of use",
-                                   image: "https://www.termsfeed.com/live/368771ae-d435-4f3a-87ed-b86d40cb8278",
-                                   url: "https://google.com",
+                                   image: "list.bullet.rectangle.portrait",
+                                   url: "https://www.termsfeed.com/live/368771ae-d435-4f3a-87ed-b86d40cb8278",
                                    isLink: true)
                 ProfileButtonsView(title: "Privacy",
                                    image: "shield.fill",
@@ -50,6 +50,7 @@ struct ProfileScreen: View {
         .onTapGesture {
             hideKeyboard()
         }
+        .ignoresSafeArea()
     }
 }
 
@@ -67,6 +68,7 @@ extension ProfileScreen {
                 Image(uiImage: image)
                     .resizable()
                     .frame(width: 136, height: 136)
+                    .scaledToFill()
                     .clipShape(Circle())
             } else {
                 Image(systemName: "camera.fill")
@@ -79,6 +81,7 @@ extension ProfileScreen {
         .onTapGesture {
             router.present(sheet: .imagePicker)
         }
+        .offset(y: 68)
     }
     
     private var nameTextField: some View {
@@ -96,6 +99,7 @@ extension ProfileScreen {
                 .frame(width: 146, height: 1)
                 .foregroundColor(.theme.background.bgMediumGray)
         }
+        .padding(.top, 68)
     }
 }
 

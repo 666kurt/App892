@@ -4,6 +4,7 @@ struct SettingButtonView: View {
     
     let title: String
     let image: String
+    let action: () -> Void
     
     var body: some View {
         VStack(spacing: 4) {
@@ -17,10 +18,13 @@ struct SettingButtonView: View {
         .background(Color.accentColor)
         .foregroundColor(.white)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+        .onTapGesture {
+            action()
+        }
     }
 }
 
 #Preview {
-    SettingButtonView(title: "Share app", image: "square.and.arrow.up.fill")
+    SettingButtonView(title: "Share app", image: "square.and.arrow.up.fill", action: {})
         .padding()
 }
