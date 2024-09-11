@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBAexSZgsYZpPYx1p1evpCOAsO4k12YrdQ</string>
+	<string>AIzaSyADT0cpL40Xxe9Wlms2Gl_5G0YCTsaZnnM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>363781128666</string>
+	<string>460174283657</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>blessthedevil.CitySecrets</string>
+	<string>com.you.c3651tys3cr3ts</string>
 	<key>PROJECT_ID</key>
-	<string>citysecrets-8e7b5</string>
+	<string>citysecrets-21d5e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>citysecrets-8e7b5.appspot.com</string>
+	<string>citysecrets-21d5e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:363781128666:ios:cd6e279353c9d686e740e3</string>
+	<string>1:460174283657:ios:d71ee4b9185606b2088758</string>
 </dict>
 </plist>

@@ -28,7 +28,6 @@
 		FC8336012C8EEAE900F3DA4C /* RouteSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336002C8EEAE900F3DA4C /* RouteSelectionView.swift */; };
 		FC8336032C8EEE1700F3DA4C /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336022C8EEE1700F3DA4C /* RouteMapView.swift */; };
 		FC8336052C8EF15C00F3DA4C /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336042C8EF15C00F3DA4C /* MapViewRepresentable.swift */; };
-		FC8336432C9073B300F3DA4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC8336422C9073B200F3DA4C /* GoogleService-Info.plist */; };
 		FC8336462C9073FD00F3DA4C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FC8336452C9073FD00F3DA4C /* FirebaseAnalytics */; };
 		FC8336482C9073FD00F3DA4C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FC8336472C9073FD00F3DA4C /* FirebaseAnalyticsOnDeviceConversion */; };
 		FC83364A2C9073FD00F3DA4C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FC8336492C9073FD00F3DA4C /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -41,6 +40,7 @@
 		FC83365C2C907D0E00F3DA4C /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83365B2C907D0E00F3DA4C /* CustomTabIndicator.swift */; };
 		FC83365E2C90955F00F3DA4C /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83365D2C90955F00F3DA4C /* OnboardingTabView.swift */; };
 		FC8336612C909B2200F3DA4C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FC8336602C909B2200F3DA4C /* SDWebImageSwiftUI */; };
+		FCD9595B2C916A8900A81CC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCD9595A2C916A8900A81CC2 /* GoogleService-Info.plist */; };
 		FCF396A22C88647300654705 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A12C88647300654705 /* SearchBar.swift */; };
 		FCF396A42C8864F100654705 /* AttractionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A32C8864F100654705 /* AttractionDetailView.swift */; };
 		FCF396A62C88678D00654705 /* CornerRadius+modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */; };
@@ -81,12 +81,12 @@
 		FC8336002C8EEAE900F3DA4C /* RouteSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSelectionView.swift; sourceTree = "<group>"; };
 		FC8336022C8EEE1700F3DA4C /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
 		FC8336042C8EF15C00F3DA4C /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
-		FC8336422C9073B200F3DA4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC83364F2C90741400F3DA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8336552C907C1C00F3DA4C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		FC8336572C907CAD00F3DA4C /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		FC83365B2C907D0E00F3DA4C /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FC83365D2C90955F00F3DA4C /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
+		FCD9595A2C916A8900A81CC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCF396A12C88647300654705 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FCF396A32C8864F100654705 /* AttractionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailView.swift; sourceTree = "<group>"; };
 		FCF396A52C88678D00654705 /* CornerRadius+modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CornerRadius+modifiers.swift"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		FC5196572C873CD90046552E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FC8336422C9073B200F3DA4C /* GoogleService-Info.plist */,
+				FCD9595A2C916A8900A81CC2 /* GoogleService-Info.plist */,
 				FC5D0F652C85A8C300823694 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -442,9 +442,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8336432C9073B300F3DA4C /* GoogleService-Info.plist in Resources */,
 				FC5D0F692C85A8C300823694 /* Preview Assets.xcassets in Resources */,
 				FC5D0F662C85A8C300823694 /* Assets.xcassets in Resources */,
+				FCD9595B2C916A8900A81CC2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
