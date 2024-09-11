@@ -137,7 +137,6 @@
 			children = (
 				FCD9595A2C916A8900A81CC2 /* GoogleService-Info.plist */,
 				FC5D0F652C85A8C300823694 /* Assets.xcassets */,
-				FC0678712C9187E20003AA62 /* codemagic.yaml */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +164,7 @@
 		FC5D0F552C85A8C100823694 = {
 			isa = PBXGroup;
 			children = (
+				FC0678712C9187E20003AA62 /* codemagic.yaml */,
 				FC5D0F602C85A8C100823694 /* CitySecrets */,
 				FC5D0F5F2C85A8C100823694 /* Products */,
 				FC8336512C907A9B00F3DA4C /* Frameworks */,
