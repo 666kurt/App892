@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0678722C9187E20003AA62 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = FC0678712C9187E20003AA62 /* codemagic.yaml */; };
 		FC5196512C871B3A0046552E /* MainContinentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5196502C871B3A0046552E /* MainContinentCardView.swift */; };
 		FC5196542C871EA60046552E /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5196532C871EA60046552E /* Continent.swift */; };
 		FC5196562C8728170046552E /* AttractionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5196552C8728170046552E /* AttractionScreen.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0678712C9187E20003AA62 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		FC5196502C871B3A0046552E /* MainContinentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContinentCardView.swift; sourceTree = "<group>"; };
 		FC5196532C871EA60046552E /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
 		FC5196552C8728170046552E /* AttractionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionScreen.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				FCD9595A2C916A8900A81CC2 /* GoogleService-Info.plist */,
 				FC5D0F652C85A8C300823694 /* Assets.xcassets */,
+				FC0678712C9187E20003AA62 /* codemagic.yaml */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5D0F692C85A8C300823694 /* Preview Assets.xcassets in Resources */,
+				FC0678722C9187E20003AA62 /* codemagic.yaml in Resources */,
 				FC5D0F662C85A8C300823694 /* Assets.xcassets in Resources */,
 				FCD9595B2C916A8900A81CC2 /* GoogleService-Info.plist in Resources */,
 			);
