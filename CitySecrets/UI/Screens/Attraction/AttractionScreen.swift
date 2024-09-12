@@ -17,7 +17,7 @@ struct AttractionScreen: View {
                 Text("Popular places")
                     .font(.title3.weight(.semibold))
                     .foregroundColor(.black)
-                ScrollView(.horizontal, showsIndicators: false) {
+                ScrollView(.horizontal, showsIndicators: true) {
                     LazyHStack(spacing: 10) {
                         ForEach(recommendedAttractions, id: \.self) { attraction in
                             AttractionPopularCardView(attraction: attraction)
@@ -48,14 +48,14 @@ struct AttractionScreen: View {
 extension AttractionScreen {
     
     private var attractionList: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: true) {
             LazyVStack(spacing: 10) {
                 ForEach(filteredAttractions, id: \.self) { attraction in
                     AttractionCardView(attraction: attraction)
                 }
             }
         }
-        .padding(.bottom, 50)
+        .padding(.bottom, 60)
     }
     
     private var filteredAttractions: [Attraction] {

@@ -66,7 +66,7 @@ extension AttractionDetailView {
     }
     
     private var contentView: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: true) {
             Text(attraction.description)
                 .foregroundColor(.black)
                 .font(.footnote)

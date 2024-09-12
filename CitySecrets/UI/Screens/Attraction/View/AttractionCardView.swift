@@ -11,7 +11,7 @@ struct AttractionCardView: View {
         WebImage(url: URL(string: attraction.image)) { image in
             image
                 .resizable()
-                .frame(height: 170)
+                .frame(height: UIScreen.main.bounds.width * 0.4)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .overlay(cardTitle, alignment: .topLeading)
                 .overlay(timeView, alignment: .bottomLeading)
@@ -20,7 +20,7 @@ struct AttractionCardView: View {
         } placeholder: {
             Rectangle()
                 .fill(Color.gray.opacity(0.2))
-                .frame(height: 170)
+                .frame(height: UIScreen.main.bounds.width * 0.5)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .animatePlaceholder(isLoading: $isLoading)
         }

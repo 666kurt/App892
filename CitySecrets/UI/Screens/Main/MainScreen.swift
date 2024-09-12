@@ -24,7 +24,7 @@ struct MainScreen: View {
 extension MainScreen {
     
     private var countryScroll: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: true) {
             LazyVStack(spacing: 8) {
                 ForEach(Continent.countryData, id: \.id) { continent in
                     NavigationLink {
@@ -35,9 +35,8 @@ extension MainScreen {
                     }
                 }
             }
-            
-            
         }
+        .padding(.bottom, 60)
     }
 }
 

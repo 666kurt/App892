@@ -57,14 +57,14 @@ extension FavoritesScreen {
     }
     
     private var favoritesListView: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: true) {
             LazyVStack(spacing: 10) {
                 ForEach(mainViewModel.filteredFavoritesAttractions, id: \.self) { attraction in
                     AttractionCardView(attraction: attraction)
                 }
             }
         }
-        .padding(.bottom, 50)
+        .padding(.bottom, 60)
     }
     
     private var routeImage: some View {
