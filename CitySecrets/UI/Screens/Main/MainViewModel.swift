@@ -1,7 +1,5 @@
 import Combine
 import Foundation
-import Firebase
-import FirebaseDatabase
 
 final class MainViewModel: ObservableObject {
     
@@ -11,33 +9,25 @@ final class MainViewModel: ObservableObject {
     @Published var favoritesStatus: [String: Bool] = [:]
     
     private let favoritesKey = "favoritesAttractions"
-
+    
     init() {
         loadFromFirebase()
         loadFavorites()
     }
-
+    
     // Загрузка данных из firebase
     func loadFromFirebase() {
-        let ref = Database.database().reference().child("attractions")
-        
-        ref.observeSingleEvent(of: .value) { snapshot in
-            guard let value = snapshot.value as? [[String: Any]] else {
-                print("Error: Could not fetch data from Firebase")
-                return
-            }
-            
+        if let url = Bundle.main.url(forResource: "attraction", withExtension: "json") {
             do {
-                let jsonData = try JSONSerialization.data(withJSONObject: value)
+                let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let decodedData = try decoder.decode([Attraction].self, from: jsonData)
-                DispatchQueue.main.async {
-                    self.attraction = decodedData
-                    self.loadFavorites()
-                }
+                attraction = try decoder.decode([Attraction].self, from: data)
+                print("Data successfully loaded from file!")
             } catch {
-                print("Error decoding data: \(error)")
+                print("Error loading data from file: \(error)")
             }
+        } else {
+            print("File not found!")
         }
     }
     

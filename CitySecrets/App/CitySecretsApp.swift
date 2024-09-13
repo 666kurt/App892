@@ -10,8 +10,6 @@ struct CitySecretsApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            
             SplashScreen(showOnboarding: $showOnboarding)
 
         }
